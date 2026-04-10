@@ -416,11 +416,18 @@
 
 <canvas id="confetti-canvas"></canvas>
 
+<button onclick="startMusic()">Klik di sini 🎧</button>
+
 <audio id="bg-music" loop>
   <source src="lagunya.mp3" type="audio/mpeg">
 </audio>
 
-<button id="music-btn" title="Toggle music">🎵</button>
+<script>
+function startMusic() {
+  const music = document.getElementById("bg-music");
+  music.play();
+}
+</script>
 
 <div class="nav-dots" id="nav-dots">
   <div class="dot active" data-page="0"></div>
