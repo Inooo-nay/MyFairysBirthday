@@ -452,8 +452,8 @@
   </h1>
   <p class="main-subtitle">
     "Dua puluh dua — usia di mana mimpi mulai punya bentuk,<br>
-    dan kamu sudah lebih dari siap untuk menjalaninya
-    btw semangat jalanin semester semester selanjutnya yaa"
+    dan kamu sudah lebih dari siap untuk menjalaninya<br>
+    btw semangat jalanin semester semester selanjutnya yaa"<br>
   </p>
 
   <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;z-index:2;">
@@ -509,12 +509,14 @@
   <div class="stars-bg" id="stars-gal"></div>
 
   <h2 class="section-heading">📸 A Glimpse of You 📸</h2>
-  <p class="section-sub">Klik tiap kotak untuk menambahkan foto favoritmu ✨</p>
+  <p class="section-sub">✨ untuk fotonya tambah sendiri yaa, tinggal di klik aja kokkk ✨</p>
 
-  <div class="gallery-grid">
-    <div class="gallery-item">
-     <img src="foto1.jpeg" alt="Foto 1" class="gallery-img">
-     <span class="gallery-label">Foto 1</span>
+<div class="gallery-grid">
+    <div class="gallery-item" id="gal0">
+      <input type="file" accept="image/*" onchange="loadPhoto(event, 'gal0')">
+      <img id="img-gal0" alt="">
+      <span class="gallery-placeholder">🌸</span>
+      <span class="gallery-label">Foto 1</span>
     </div>
     <div class="gallery-item" id="gal1">
       <input type="file" accept="image/*" onchange="loadPhoto(event, 'gal1')">
@@ -568,7 +570,7 @@
     <p class="surprise-msg">
       Kamu layak mendapatkan semua kebaikan yang ada di dunia ini.<br>
       Setiap doa yang dipanjatkan, setiap bintang yang kamu lihat di langit malam,<br>
-      semoga semuanya bermuara ke kamu — dengan hangat dan penuh kasih.<br>
+      semoga semuanya bermuara ke kamu, dengan hangat dan penuh kasih.<br>
       You are more than enough, Naya.
     </p>
     <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:18px; color:#FF8FAB; margin-bottom:28px;">
